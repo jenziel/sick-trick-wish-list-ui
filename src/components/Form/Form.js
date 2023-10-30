@@ -40,6 +40,7 @@ function clearInput(){
         <option value='switch'>switch</option>
       </select>
       <input
+        className='trick-name'
         type='text'
         placeholder='Name of Trick'
         name='name'
@@ -51,7 +52,7 @@ function clearInput(){
         value={obstacle}
         onChange={(event) => setObstacle(event.target.value)}
       >
-        <option value='' disabled>
+        <option value='' disabled className='obstacle'>
           Choose your Obstacle
         </option>
         <option value='Flatground'>Flatground</option>
@@ -62,6 +63,7 @@ function clearInput(){
       </select>
 
       <input
+        className='tutorial'
         type='text'
         placeholder='Link to Tutorial'
         name='tutorial'
