@@ -3,27 +3,27 @@ import "./Form.css";
 
 function Form({ addTrick }) {
   const [stance, setStance] = useState("");
-  const [trickName, setTrickName] = useState("");
+  const [name, setName] = useState("");
   const [obstacle, setObstacle] = useState("");
-  const [link, setLink] = useState("");
+  const [tutorial, setTutorial] = useState("");
 
   function submitTrick(event) {
     event.preventDefault()
     const newTrick = {
         id: Date.now(),
         stance,
-        trickName,
+        name,
         obstacle,
-        link
+        tutorial
     }
     addTrick(newTrick)
     clearInput()
 }
 function clearInput(){
     setStance("")
-    setTrickName("")
+    setName("")
     setObstacle("")
-    setLink("")
+    setTutorial("")
 }
   return (
     <div className='form'>
@@ -42,9 +42,9 @@ function clearInput(){
       <input
         type='text'
         placeholder='Name of Trick'
-        name='trickName'
-        value={trickName}
-        onChange={(event) => setTrickName(event.target.value)}
+        name='name'
+        value={name}
+        onChange={(event) => setName(event.target.value)}
       />
       <select
         name='obstacle'
@@ -64,9 +64,9 @@ function clearInput(){
       <input
         type='text'
         placeholder='Link to Tutorial'
-        name='link'
-        value={link}
-        onChange={(event) => setLink(event.target.value)}
+        name='tutorial'
+        value={tutorial}
+        onChange={(event) => setTutorial(event.target.value)}
       />
       <button className='submit-btn' onClick = { event => submitTrick(event)}>Send it!</button>
     </div>

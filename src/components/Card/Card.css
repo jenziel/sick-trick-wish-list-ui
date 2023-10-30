@@ -1,3 +1,8 @@
 .card {
     background-color: #eff8ff;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
