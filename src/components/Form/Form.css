@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8vh;
+}
+.stance {
+    margin-left: 21vw;
+}
+.submit-btn {
+    margin-right: 20vw;
+    /* width: 5vw; */
+    font-size: 1.1rem;
+    padding: .75rem;
+    font-family: 'Fredoka One';
+    background-color: #eff8ff;
+    border: none;
+}
+
+select,
+input,
+.submit-btn{
+    padding: .5rem;
+    font-family: 'Fredoka One';
+    border-radius: 10px;
+}
+
+select,
+input { 
+    border: none;
+}
