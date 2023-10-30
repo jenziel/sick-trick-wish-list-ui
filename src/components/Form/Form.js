@@ -56,8 +56,8 @@ function clearInput(){
           Choose your Obstacle
         </option>
         <option value='Flatground'>Flatground</option>
-        <option value='Ledge '>Ledge </option>
-        <option value='Rail '>Rail </option>
+        <option value='Ledge'>Ledge </option>
+        <option value='Rail'>Rail </option>
         <option value='Stairs'>Stairs</option>
         <option value='Pool'>Pool</option>
       </select>
